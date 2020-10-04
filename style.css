@@ -141,3 +141,46 @@ section{
   color: var(--white);
   padding-left: 20px;
 }
+
+.sci{
+  position: absolute;
+  bottom: 75px;
+  left: 150px;
+  list-style: none;
+  display: flex;
+  animation: left-in 0.3s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+.sci li a{
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 30px;
+  color: var(--white);
+  opacity: 0.5;
+}
+.sci li a:hover{
+  opacity: 1;
+  color: var(--green);
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes left-in{
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* about me */
