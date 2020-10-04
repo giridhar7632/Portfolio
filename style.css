@@ -35,3 +35,44 @@ section{
   border: 2px solid var(--white);
   border-radius: 50%;
 }
+/* Scroll bar */
+::-webkit-scrollbar{
+  width: 0;
+}
+#scrollPath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  z-index: 1000;
+}
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, var(--dark-green),var(--dark));
+  z-index: 1000;
+}
+#progressbar:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--dark-green),var(--dark));
+  filter: blur(10px);
+}
+#progressbar:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--dark-green),var(--dark));
+  filter: blur(30px);
+}
