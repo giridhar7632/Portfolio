@@ -161,7 +161,7 @@ section{
 }
 .sci li a:hover{
   opacity: 1;
-  color: var(--green);
+  color: var(--white);
 }
 
 @keyframes fade-in{
