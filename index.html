@@ -116,27 +116,30 @@
   <section id="contact-me">
     <div class="container">
       <h1 class="section-head">Contact Me</h1>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Your name">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Your email">
-        <label for="msg">Message</label>
-        <textarea name="Text1" cols="40" rows="5" id="text-area" placeholder="Type your message..."></textarea>
-        <input type="submit" value="submit">
+      <form class="form">
+        <p class="form-p" type="Name:"><input type="text" placeholder="Your Name"></p>
+        <p class="form-p" type="Email:"><input type="email" placeholder="Your Email" required></p>
+        <p class="form-p" type="Message:"><input type="text" placeholder="Type your message here..."></p>
+        <button>Send Message</button>
       </form>
-        <ul class="social">
-          <li><a href="https://www.facebook.com/talla.giridhar.5/">Facebook</a></li>
-          <li><a href="mailto:giridhar.talla2002@gmail.com">Email</a></li>
-          <li><a href="https://github.com/giridhar7632">Github</a></li>
-          <li><a href="https://www.freecodecamp.org/mr_giridhar7632">FreeCodeCamp</a></li>
-        </ul>
-        <div class="footer-logo">Giridhar</div>
-        <div class="copyright">
-          &copy;2020  All rights reserved
-        </div>
     </div>
   </section>
+  <footer>
+    <div class="socialmedia">
+      <ul class="social">
+        <li><a href="https://www.facebook.com/talla.giridhar.5/">Facebook</a></li>
+        <li><a href="mailto:giridhar.talla2002@gmail.com">Email</a></li>
+      </ul>
+      <ul class="social">
+        <li><a href="https://github.com/giridhar7632">Github</a></li>
+        <li><a id="profile-link" href="https://www.freecodecamp.org/mr_giridhar7632">FreeCodeCamp</a></li>
+      </ul>
+    </div>
+    <div class="footer-logo">Giridhar</div>
+    <div class="copyright">
+      &copy;2020  All rights reserved
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
