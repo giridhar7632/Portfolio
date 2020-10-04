@@ -196,7 +196,7 @@ section{
   -webkit-text-stroke: 1px var(--green);
   -webkit-text-fill-color:transparent;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   animation: left-in 0.3s ease-in forwards;
   animation-delay: 0s;
   opacity: 0;
@@ -250,6 +250,101 @@ section{
   height: 100%;
   background: var(--green);
   clip-path: polygon(85% 0, 100% 0, 100% 100%, 58% 100%);
+
+  animation: fade-in 0.3s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+
+/* Projects */
+.project{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-tile{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 5px;
+
+  animation: fade-in 0.5s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+
+.project-tile .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.project-tile .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.project-tile:hover .imgBx img{
+  opacity: 0;
+}
+.project-tile .content{
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  width: 80%;
+  height: 20%;
+  background: var(--green);
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 5px;
+
+  padding: 15px;
+  box-sizing: border-box;
+}
+.project-tile .content h2{
+  margin: 0;
+  margin-top: -5px;
+  padding: 0;
+  font-size: 20px;
+  color: var(--white);
+}
+.project-title{
+  color: var(--white);
+}
+.project-tile .content .links{
+  list-style: none;
+  margin: 10px;
+}
+.project-tile .content .links li a{
+  text-decoration: none;
+  color: var(--black);
+}
+.project-tile:hover .content{
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+
+}
+#projects:before{
+  content: '';
+  position: absolute;
+  top: 200vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  clip-path: polygon(58% 0, 100% 0, 100% 100%, 85% 100%);
 
   animation: fade-in 0.3s ease-in forwards;
   animation-delay: 0s;
