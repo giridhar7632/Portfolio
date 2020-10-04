@@ -7,6 +7,7 @@ window.onscroll = () => {
   progress.style.height = progressHeight+'%'
 }
 
+
 // Parallax on mouse move
 
 const mmParallax = (element, xDistance, yDistance, speed) => {
@@ -24,8 +25,3 @@ document.addEventListener('mousemove', e => {
   })
 })
 
-//parallax on scroll
-const parallax = (layer, distance, speed) => {
-  const item = document.querySelector(layer)
-  item.style.transform = `translateY(${distance*speed}px)`
-}

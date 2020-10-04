@@ -11,9 +11,11 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+html,
 body{
   overflow-x: hidden;
   background: var(--black);
+  scroll-behavior: smooth;
 }
 section{
   height: 100vh;
@@ -22,8 +24,8 @@ section{
 
 .logo{
   position: absolute;
-  top: 120px;
-  right: 120px;
+  top: 15vh;
+  right: 15vh;
   width: 180px;
   height: 180px;
   display: flex;
@@ -78,10 +80,18 @@ section{
 }
 
 /* nav bar */
+header{
+  background: var(--black);
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  height: 15vh;
+  z-index: 100;
+}
 .nav-links{
   position: absolute;
-  top: 75px;
-  left: 150px;
+  top: 8vh;
+  left: 10vw;
   list-style: none;
   display: flex;
   border-left: 5px solid var(--dark-green);
@@ -110,6 +120,8 @@ section{
   height: 100%;
   background: var(--green);
   clip-path: polygon(58% 0, 100% 0, 100% 100%, 85% 100%);
+
+  z-index: 101;
 
   animation: fade-in 0.3s ease-in forwards;
   animation-delay: 0s;
@@ -144,8 +156,8 @@ section{
 
 .sci{
   position: absolute;
-  bottom: 75px;
-  left: 150px;
+  bottom: 8vh;
+  left: 10vw;
   list-style: none;
   display: flex;
   animation: left-in 0.3s ease-in forwards;
@@ -187,13 +199,12 @@ section{
 .container{
   padding-left: 150px;
   padding-top: 150px;
-  z-index: 10;
 }
 .section-head{
   font-size: 48px;
   font-weight: 700;
   font-family: sans-serif;
-  -webkit-text-stroke: 1px var(--green);
+  -webkit-text-stroke: 1.5px var(--green);
   -webkit-text-fill-color:transparent;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -208,7 +219,6 @@ section{
   font-size: 18px;
   color: var(--white);
   padding-bottom: 20px;
-  z-index: 100;
 }
 .skills{
   font-size: 24px;
@@ -251,6 +261,8 @@ section{
   background: var(--green);
   clip-path: polygon(85% 0, 100% 0, 100% 100%, 58% 100%);
 
+  z-index: 101;
+
   animation: fade-in 0.3s ease-in forwards;
   animation-delay: 0s;
   opacity: 0;
@@ -270,6 +282,8 @@ section{
   background-color: #fff;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   border-radius: 5px;
+
+  z-index: 101;
 
   animation: fade-in 0.5s ease-in forwards;
   animation-delay: 0s;
@@ -346,7 +360,11 @@ section{
   background: var(--green);
   clip-path: polygon(58% 0, 100% 0, 100% 100%, 85% 100%);
 
+  z-index: 101;
+
   animation: fade-in 0.3s ease-in forwards;
   animation-delay: 0s;
   opacity: 0;
 }
+
+/* contact */
