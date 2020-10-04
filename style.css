@@ -1,0 +1,37 @@
+:root{
+  --white: #F8F8F7;
+  --black:#3A3A3A;
+  --green: #8BB14F;
+  --dark-green: #617343;
+  --dark: #595B57;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+section{
+  height: 100vh;
+  min-width: 100%;
+  background: var(--black);
+}
+
+.logo{
+  position: absolute;
+  top: 120px;
+  right: 120px;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Homemade Apple', cursive;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
