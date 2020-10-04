@@ -13,11 +13,11 @@
 }
 body{
   overflow-x: hidden;
+  background: var(--black);
 }
 section{
   height: 100vh;
   min-width: 100%;
-  background: var(--black);
 }
 
 .logo{
@@ -184,3 +184,74 @@ section{
 }
 
 /* about me */
+.container{
+  padding-left: 150px;
+  padding-top: 150px;
+  z-index: 10;
+}
+.section-head{
+  font-size: 48px;
+  font-weight: 700;
+  font-family: sans-serif;
+  -webkit-text-stroke: 1px var(--green);
+  -webkit-text-fill-color:transparent;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  animation: left-in 0.3s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+.section-head:hover{
+  color: var(--green);
+}
+.about{
+  font-size: 18px;
+  color: var(--white);
+  padding-bottom: 20px;
+  z-index: 100;
+}
+.skills{
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--green);
+  letter-spacing: 1.15pt;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  animation: left-in 0.3s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+.skill{
+  font-size: 20px;
+  color: var(--dark-green);
+  font-weight: 700;
+  animation: left-in 0.5s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+.skill-list{
+  list-style: none;
+  display: flex;
+  width: 35%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: var(--white);
+  animation: fade-in 0.5s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
+#about-me:before{
+  content: '';
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  clip-path: polygon(85% 0, 100% 0, 100% 100%, 58% 100%);
+
+  animation: fade-in 0.3s ease-in forwards;
+  animation-delay: 0s;
+  opacity: 0;
+}
