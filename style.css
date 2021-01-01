@@ -19,7 +19,7 @@ body{
 }
 section{
   height: 100vh;
-  min-width: 100%;
+  min-width: 100vw;
 }
 
 .logo{
@@ -486,4 +486,10 @@ footer .socialmedia{
 .copyright{
   font-size: 16px;
   color: var(--green);
+}
+
+@media screen and (max-width: 480px){
+  *{
+    display: none;
+  }
 }
